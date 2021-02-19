@@ -125,6 +125,21 @@ console.log()
 
 // Push
 
+Array.prototype.myPush = function(...items) {
+  for (let i = 0; i < items.length; i++) {
+    this[this.length] = items[i];
+  }
+}
+
+console.log("Push")
+let b = [];
+console.log(b) // []
+b.myPush(1) 
+console.log(b) // [1]
+b.myPush(2, 3) 
+console.log(b) // [1, 2, 3]
+console.log()
+
 // lastIndexOf
 
 // Object.keys()
