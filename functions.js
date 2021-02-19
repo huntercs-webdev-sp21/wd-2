@@ -159,5 +159,22 @@ console.log()
 
 // Object.keys()
 
+Object.prototype.grabKeys = function() {
+  const keys = [];
+  for (let key in this) {
+    keys.push(key);
+  }
+  return keys;
+}
+
+console.log("Object.keys")
+const obj = {
+  "a": 1,
+  "b": 2,
+  "c": 3
+}
+console.log(obj.grabKeys()) // ['a','b','c', 'grabKeys']
+console.log()
+
 // Object.values()
 
