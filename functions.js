@@ -108,6 +108,21 @@ console.log()
 
 // indexOf
 
+Array.prototype.myIndexOf = function(item, fromIndex=0) {
+  for (let i = fromIndex; i < this.length; i++) {
+    if (this[i] == item) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+console.log("IndexOf")
+console.log(a.myIndexOf(3))    // 2
+console.log(a.myIndexOf(-1))   // -1
+console.log(a.myIndexOf(1, 1)) // -1
+console.log()
+
 // Push
 
 // lastIndexOf
