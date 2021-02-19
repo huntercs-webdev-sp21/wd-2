@@ -10,6 +10,7 @@ Array.prototype.myEach = function(callback) {
 let a = [1,2,3,4,5];
 console.log("myEach");
 a.myEach(b=>console.log(b*2));
+console.log()
 
 // Map
 
@@ -24,6 +25,7 @@ Array.prototype.myMap = function(callback) {
 console.log("myMap");
 let aMap = a.myMap((b)=>b * 2);
 console.log(aMap);
+console.log()
 
 // Filter
 
@@ -38,6 +40,7 @@ Array.prototype.myFilter = function(callback) {
 console.log("Filter a < 3");
 let aFil = a.myFilter((b)=>b < 3);
 console.log(aFil);
+console.log()
 
 // Some (Any)
 
@@ -53,6 +56,7 @@ console.log("Some a < 5");
 console.log(a.mySome((b)=>   b < 5));
 console.log("Some a > 5");
 console.log(a.mySome((b)=>   b > 5));
+console.log()
 
 // Every
 
@@ -69,6 +73,7 @@ console.log("Every a > 5");
 console.log(a.myEvery((b)=>   b > 5));
 console.log("Every a < 6");
 console.log(a.myEvery((b)=>   b < 6));
+console.log()
 
 // Reduce
 
@@ -82,6 +87,7 @@ Array.prototype.myReduce = function(callback) {
 
 console.log("Reduce");
 console.log(a.myReduce((accum, b) => accum + b));
+console.log()
 
 // Includes
 
