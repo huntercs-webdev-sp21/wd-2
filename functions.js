@@ -72,6 +72,17 @@ console.log(a.myEvery((b)=>   b < 6));
 
 // Reduce
 
+Array.prototype.myReduce = function(callback) {
+  let accum = this[0];
+  for(let i = 1; i < this.length; i++){
+    accum = callback(accum,this[i]);
+  }
+  return accum;
+};
+
+console.log("Reduce");
+console.log(a.myReduce((accum, b) => accum + b));
+
 // Includes
 
 // indexOf
