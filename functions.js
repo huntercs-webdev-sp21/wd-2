@@ -178,3 +178,13 @@ console.log()
 
 // Object.values()
 
+Object.prototype.grabValues = function() {
+  const values = [];
+  for (let key in this) {
+    values.push(this[key]);
+  }
+  return values;
+}
+
+console.log("Object.values")
+console.log(obj.grabValues()) // [1,2,3, Function, Function]
