@@ -142,6 +142,21 @@ console.log()
 
 // lastIndexOf
 
+Array.prototype.myLastIndexOf = function(item, fromIndex=this.length-1) {
+  for (let i = fromIndex; i >= 0; i--) {
+    if (this[i] == item) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+console.log("lastIndexOf")
+console.log(a.myLastIndexOf(1))    // 0
+console.log(a.myLastIndexOf(6))    // -1
+console.log(a.myLastIndexOf(5, 3)) // -1
+console.log()
+
 // Object.keys()
 
 // Object.values()
