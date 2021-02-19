@@ -91,6 +91,21 @@ console.log()
 
 // Includes
 
+Array.prototype.myIncludes = function(item, fromIndex=0) {
+  for (let i = fromIndex; i < this.length; i++) {
+    if (this[i] == item) {
+      return true;
+    }
+  }
+  return false;
+}
+
+console.log("Includes")
+console.log(a.myIncludes(1))    // true
+console.log(a.myIncludes(-1))   // false
+console.log(a.myIncludes(1, 1)) // false
+console.log()
+
 // indexOf
 
 // Push
